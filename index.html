@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- head -->
+    <head>
+        <link href="styles.css" rel="stylesheet" />
+        <title>Weather App</title>
+    </head>
+
+    <!-- body -->
+    <body>
+
+        <!-- main content wrapper -->
+        <main>
+
+            <!-- weather wrapper section -->
+            <section id="weather-wrapper">
+
+                <!-- header -->
+                <h1>Weather App</h1> 
+
+                <!-- weather search div -->
+                <div id="weather-search">
+
+                    <!-- search text field -->
+                    <input id="search" type="text" placeholder="Search by city" />
+                    
+                    <!-- submit button-->
+                    <input id="submit" type="submit" onclick="fetchWeather()" value="Search" />
+                </div>
+
+                <!-- weather data div, hidden by default -->
+                <div id="weather-data" style="display: none;"></div>
+            </section>
+        </main>
+
+        <!--js added at the end so DOM loads before script runs -->
+        <script src="script.js"></script>
+    </body>
+
+</html>
